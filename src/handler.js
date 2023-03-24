@@ -40,7 +40,7 @@ const addBookHandler = (request, h) => {
     updatedAt,
   });
 
-  const isFailed = books.filter((note) => note.id === id).length <= 0;
+  const isFailed = books.filter((note) => note.id === id).length === 0;
 
   if (isFailed) {
     return h.response({
