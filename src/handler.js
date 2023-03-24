@@ -75,14 +75,16 @@ const getAllBooksHandler = (request, h) => {
     allBooks = books.filter((book) => book.finished === Boolean(Number(searchFinished)));
   }
 
+  allBooks = allBooks.map((book) => {
+    const { id, name, publisher } = book;
+
+    return { id, name, publisher };
+  });
+
   return h.response({
     status: 'success',
     data: {
-      books: allBooks.map((book) => {
-        const { id, name, publisher } = book;
-
-        return { id, name, publisher };
-      }),
+      books: allBooks,
     },
   });
 };
