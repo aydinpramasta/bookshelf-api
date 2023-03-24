@@ -1,0 +1,27 @@
+{
+  "name": "bookshelf-api",
+  "version": "1.0.0",
+  "description": "Bookshelf API Service",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aydinpramasta/bookshelf-api.git"
+  },
+  "author": "Aydin Pramasta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aydinpramasta/bookshelf-api/issues"
+  },
+  "homepage": "https://github.com/aydinpramasta/bookshelf-api",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
+}
